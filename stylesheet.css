@@ -1,0 +1,289 @@
+
+/*------------------------ Common CSS Declarations ----------------------------------*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.h-primary{
+    font-size: 2.5rem;
+    padding: 15px 15px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h-secondry{
+    font-size: 1.5rem;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+hr{
+    margin:20px;
+}
+
+
+/*------------------------------------- Navigation Bar ----------------------------------- */
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 100px;
+}
+
+/* Gives the background of navigation bar */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo{
+    margin: 20px 30px;
+}
+
+#logo img{
+    height: 90px;
+    border-radius: 50px;
+}
+
+#logo img:hover{
+    cursor: pointer;
+}
+
+.navlist{
+    display: flex;  
+}
+
+.navlist a{
+    color: white; 
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* hover effect on navigation list buttons */
+.navlist a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* ------------------------------- Home Section --------------------------------- */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 50px;
+    justify-content: center;
+    align-items: center;
+    height: 410px;
+}
+
+/* gives the background image to home  */
+#home::before{
+    content: "";
+    background: url(bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1{
+    color: white;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.btn{
+    padding: 5px 20px;
+    margin: 20px;
+    color: black;
+    border: 2px solid black;
+    background: none;
+    font-size:1.2rem ;
+    border-radius: 10px;
+}
+
+/* hover effect for button */
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+/* ---------------------------------Our Services-------------------------------- */
+
+
+#services{
+    display: flex;
+    margin: 0 20px;
+}
+
+#services .box{
+    border: 2px solid rgb(182, 22, 96);
+    margin-top: 20px;
+    padding: 20px;
+    margin: 8px 8px;
+    border-radius: 15px;
+    background: rgb(250 241 241);
+    width: max-content;
+    width: 370px;
+}
+
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#services .box p{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;    
+}
+
+
+/* Transition effect on hovering the object  */
+.box-wrap .box{
+    transition: all 0.3s;
+}
+
+.box-wrap:hover .box:hover{
+    transform:scale(1.03);
+    box-shadow: 8px 8px 5px 8px rgba(41, 37, 37, 0.13);
+}
+
+
+/* ---------------------------App Availablity and Social Media------------------------- */
+
+
+#app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app img{
+    height: 100px;
+    margin: 15px 40px;
+}
+
+#social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#social img{
+    height: 100px;
+    margin: 15px 40px;
+}
+
+
+/* ----------------------------------Contact Section--------------------------------- */
+
+
+#contact{
+    height: 600px;
+    margin:  0px;
+    position: relative;
+    color: white;
+}
+
+
+/* Gives the backgorund image to contact us block */
+#contact::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url(contactus.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 33px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;  
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 2px solid #070707;
+}
+
+#contact-box textarea{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 2px solid #070707;
+}
+
+#contact-box button{
+    display:block;
+    width: 8rem;
+    margin: 5px auto;
+}
+
+
+/*------------------------------------- Footer -------------------------------------*/
+
+footer{
+    background: black;
+    color: white;
+    margin-top: 5px;
+}
+
+

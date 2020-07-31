@@ -1,0 +1,96 @@
+/* -----------------------------------------------------------Rsponsive CSS File----------------------------------------------------------- */
+
+/* ---------------------------Common CSS Declarations----------------------------- */
+
+.h-primary{
+    font-size: 1.5rem;
+}
+
+
+/*------------------------------------- Navigation Bar ----------------------------------- */
+
+
+#navbar{
+    flex-direction: column;
+}
+
+#logo{
+    margin: 0;
+}
+
+#logo img{
+    height: 70px;
+    border-radius: 50px;
+}
+
+.navlist a{
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+
+/* ------------------------------- Home Section --------------------------------- */
+
+
+#home{
+    height: 370px;
+}
+
+#home::before{
+    height: 480px;
+}
+
+#home p{
+    font-size:0.8rem;
+}
+
+.btn{
+    padding: 5px 10px;
+    margin: 10px;
+    font-size:0.9rem ;
+}
+
+
+/* ---------------------------------Our Services-------------------------------- */
+
+
+#services{
+    flex-direction: column;
+    margin: 0;
+    padding: 0 5px;
+}
+
+
+#services .box{
+   width: 85%;
+}
+
+
+/* ---------------------------App Availablity and Social Media------------------------- */
+
+
+#app{
+    flex-wrap: wrap;
+}
+
+#social{
+    flex-wrap: wrap;
+}
+
+#social img, #app img{
+    height: 50px;
+    margin: 15px 15px;
+}
+
+
+/* ----------------------------------Contact Section--------------------------------- */
+
+
+#contact::before
+{
+    background: url(contactus1.jpg) no-repeat center center/cover;
+}
+
+#contact-box form{
+    width: 70%;
+}
